@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-color: var(--main-bg);
+    font-size: 18px;
+}
+h2{
+    color: var(--cyan);
+}
+p, hr{
+    color: var(--soft-blue);
+    border-color: var(--soft-blue);
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* MAIN */
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+section .section-bg{
+    width: 350px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: var(--card-bg);
+}
+section .section-bg-img{
+    width: 300px;
+    border-radius: 10px;
+}
+section .section-div-one-txt{
+    padding: 15px 0;
+}
+section .section-div-one-txt h1{
+    font-size: 1.2em;
+    padding-bottom: 15px;
+}
+section .sections-divs-icons{
+    display: flex;
+    justify-content: space-between;
+}
+section .div-one-icons{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+section .div-one-icons span{
+    font-size: 0.8em;
+    padding-left: 5px;
+}
+
+section .section-div-two{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+section .section-div-two img{
+    width: 40px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+section .section-div-two p{
+    padding-left: 10px;
+    font-size: 0.9em;
+}
+
+
+.color-blue{
+    color: var(--cyan);
+    font-weight: bolder;
+}
+.color-txt{
+    color: var(--soft-blue);
+}
+
+
+/* FOOTER */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 20px 0;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* EFECTS */
+a:hover{
+    color: var(--cyan);
+}
+
