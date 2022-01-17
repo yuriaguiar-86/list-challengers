@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+
+:root{
+    --pale: hsl(225, 100%, 94%);
+    --bright: hsl(245, 75%, 52%);
+    --very: hsl(225, 100%, 98%);
+    --desaturated: hsl(224, 23%, 55%);
+    --dark: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--pale) url("./images/pattern-background-desktop.svg") no-repeat left top fixed;
+    background-size: 100vw;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+span{
+    color: var(--dark);
+    font-weight: 700;
+}
+a{
+    color: var(--bright);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+main img{
+ border-radius: 10px 10px 0 0;
+}
+main section{
+    background-color: var(--very);
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    padding: 30px;
+    width: 450px;
+}
+section h1{
+    font-weight: 900;
+    color: var(--dark);
+    font-size: 1.7em;
+}
+section .section-p{
+    padding: 20px;
+    color: var(--desaturated);
+}
+section .section-div{
+    display: flex;
+    background-color: hsla(225, 100%, 94%, 0.5);
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+section .section-div p{
+    color: var(--desaturated);
+}
+section button{
+    padding: 15px;
+    width: 100%;
+    background-color: var(--bright);
+    color: var(--very);
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+section .section-a{
+    margin-top: 20px;
+}
+section .section-a a{
+    color: var(--dark);
+    font-weight: 900;
+}
+
+/* FOOTER */
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* EFECTS */
+section button:hover{
+    box-shadow: 3px 3px 5px var(--dark);
+    transition: .2s ease-in;
+}
