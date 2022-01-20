@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+
+:root{
+    --dark: hsl(233, 47%, 7%);
+    --desaturated: hsl(244, 38%, 16%);
+    --violet: hsl(277, 64%, 61%);
+    --white-heading: hsl(0, 0%, 100%);
+    --white-paragraph: hsla(0, 0%, 100%, 0.75);
+    --white-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--dark);
+    font-size: 15px;
+    font-family: 'Inter', 'Red Hat Display', sans-serif;
+}
+h1, h2{
+    color: var(--white-heading);
+}
+p{
+    color: var(--white-paragraph);
+}
+span{
+    color: var(--violet);
+}
+
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+main section{
+    max-width: 540px;
+    max-height: 446px;
+    margin: 130px 0;
+}
+main .section-txt{
+    padding: 80px;
+    background-color: var(--desaturated);
+    border-radius: 10px 0 0 10px;
+}
+main .section-txt h1{
+    font-size: 2.3em;
+    padding-bottom: 30px;
+}
+main .section-txt p{
+    padding-bottom: 80px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+main .section-txt aside{
+    display: flex;
+    justify-content: space-between;
+}
+main .section-image{
+    background-color: var(--violet);
+    border-radius: 0 10px 10px 0;
+}
+main .section-image img{
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    opacity: .7;
+}
+.p-uppercase{
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
