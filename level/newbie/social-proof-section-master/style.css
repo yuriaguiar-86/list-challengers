@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Spartan:wght@400;500;700&display=swap');
+
+:root{
+    --veryDark: hsl(300, 43%, 22%);
+    --pink: hsl(333, 80%, 67%);
+    --darkMagenta: hsl(303, 10%, 53%);
+    --lightMagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-family: 'Spartan', 'Kumbh Sans', sans-serif;
+    background-image: url('./images/bg-pattern-top-desktop.svg'), url('./images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 35vw;
+}
+h1{
+    font-size: 2.5rem;
+    color: var(--veryDark);
+}
+h2{
+    font-size: .7rem;
+    color: var(--veryDark);
+    font-weight: bold;
+}
+figcaption img{
+    width: 20px;
+    padding: 3px;
+}
+figcaption{
+    margin: 0 20px 0 0;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 110px 100px;
+}
+main .section-txt{
+    width: 350px;
+    margin-right: 100px;
+}
+main .section-txt p{
+    font-size: .7rem;
+    padding: 15px 0 50px 0;
+    color: var(--darkMagenta);
+}
+section .section-div{
+    display: flex;
+    align-items: center;
+    background-color: var(--lightMagenta);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+section .section-div h2{
+  padding-right: 20px;
+}
+main .section-users{
+    background-color: var(--veryDark);
+    max-width: 360px;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: .7rem;
+}
+main .section-users p{
+    color: var(--lightMagenta);
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+.section-users-img{
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+.section-users-img img{
+    max-width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.section-users-img h2{
+    color: var(--white);
+}
+.section-users-img h3{
+    color: var(--pink);
+    font-size: .6rem;
+    padding-top: 5px;
+}
+.one{
+    margin-right: 120px;
+}
+.two{
+    margin: 0 40px;
+}
+.three{
+    margin-left: 80px;
+}
+
+
+
+
+
+/* FOOTER */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);  
+}
